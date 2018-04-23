@@ -1,0 +1,7 @@
+<ngx-charts-number-card
+  *ngIf="single && single.length > 0"
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="single"
+  (select)="onSelect($event)">
+</ngx-charts-number-card>

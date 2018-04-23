@@ -1,0 +1,18 @@
+<div>
+  <mat-form-field>
+      <input
+        [formControl]="loginUser"
+        matInput
+        placeholder="Email"
+        type="text">
+  </mat-form-field>
+  <mat-form-field>
+      <input
+        [formControl]="loginPass"
+        matInput
+        placeholder="Password"
+        type="password">
+  </mat-form-field>
+  <button mat-raised-button color="accent" (click)="login()">Login</button>
+</div>
+<span *ngIf="user">Is logged</span>
